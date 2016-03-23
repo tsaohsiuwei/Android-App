@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <EditText
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/location"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/title"
+        android:layout_below="@+id/location"
+        android:layout_alignStart="@+id/location"
+        android:layout_marginTop="55dp" />
+
+    <EditText
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/description"
+        android:layout_below="@+id/errorinfo"
+        android:layout_alignEnd="@+id/postit" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post it"
+        android:id="@+id/postit"
+        android:layout_marginBottom="81dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/title" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location:"
+        android:id="@+id/locationtext"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/location"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title:"
+        android:id="@+id/titletext"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:id="@+id/descriptiontext"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/description"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/errorinfo"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>

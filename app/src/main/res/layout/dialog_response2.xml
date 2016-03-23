@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="20dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#FF444444"
+        android:id="@+id/response_title"
+        android:layout_weight="0.1" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/listView"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.24"
+        tools:listitem="@android:layout/simple_list_item_1" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.09">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:id="@+id/button_accept"
+            android:layout_marginEnd="96dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decline"
+            android:id="@+id/button_decline"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.1"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/button_accept" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go  Back"
+        android:id="@+id/button_back"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/button_accept"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1" />
+
+</LinearLayout>
